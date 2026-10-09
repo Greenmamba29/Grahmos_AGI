@@ -1,0 +1,29 @@
+{
+  "name": "@grahmos/gate",
+  "version": "0.5.0",
+  "description": "GATE: Gated Agent Trust Evaluation — integrity-aware agent eval harness with time-horizon scoring, roadmap gates and a tamper-evident audit log",
+  "scripts": {
+    "typecheck": "tsc -p . --noEmit",
+    "test": "vitest run",
+    "gate": "tsx bin/gate.ts",
+    "demo": "tsx bin/gate.ts demo --out runs/demo"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "type": "module",
+  "bin": {
+    "gate": "bin/gate.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

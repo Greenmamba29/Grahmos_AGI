@@ -1,0 +1,12 @@
+{
+  "name": "@grahmos/sentinel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Continuous hallucination monitor: idle-time probes, change-point episode detection (onset and end), host-context attribution, audit-chained evidence.",
+  "exports": { ".": "./src/index.ts" },
+  "bin": { "sentinel": "bin/sentinel.ts" },
+  "scripts": { "typecheck": "tsc -p . --noEmit", "test": "vitest run", "start": "tsx bin/sentinel.ts run", "demo": "tsx bin/sentinel.ts demo" },
+  "dependencies": { "@grahmos/gate": "workspace:*", "@grahmos/trainloop": "workspace:*" },
+  "devDependencies": { "@types/node": "catalog:", "tsx": "catalog:", "typescript": "catalog:", "vitest": "catalog:" }
+}
