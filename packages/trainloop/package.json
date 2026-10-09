@@ -1,0 +1,11 @@
+{
+  "name": "@grahmos/trainloop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Train-loop plumbing on top of GATE: pool manager (family splits, sealed held-out, canaries), trajectory exporter (SFT + preference pairs), and RL environment adapter.",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc -p . --noEmit", "test": "vitest run" },
+  "dependencies": { "@grahmos/gate": "workspace:*" },
+  "devDependencies": { "@types/node": "catalog:", "tsx": "catalog:", "typescript": "catalog:", "vitest": "catalog:" }
+}

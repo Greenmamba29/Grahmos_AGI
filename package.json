@@ -1,0 +1,14 @@
+{
+  "name": "grahmos-agi",
+  "private": true,
+  "description": "GrahmOS AGI workspace: GATE eval harness, Sentinel hallucination monitor, and the train loop (pools, exporter, RL environments).",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.6",
+  "engines": { "node": ">=22.12" },
+  "scripts": {
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "sentinel": "pnpm --filter @grahmos/sentinel start",
+    "sentinel:demo": "pnpm --filter @grahmos/sentinel demo"
+  }
+}
